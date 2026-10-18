@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dribble</title>
-    <link rel="icon" type="image/x-icon" href="images/50x50.png" />
+    <link rel="icon" type="image/x-icon" href="images/Ele.png" />
 
     <!-- Owl CDN---- -->
     <link
@@ -25,87 +25,378 @@
   </head>
 
   <body>
-    <div class="main">
-      <div id="page1">
-        <div id="nav">
-          <div id="nav-part1">
-            <a href="#"><h4>Explore</h4></a>
-            <a href="#"><h4>Inspiration</h4></a>
-            <a href="#"><h4>Hire a Designer</h4></a>
-            <a href="#"><h4>Find Jobs</h4></a>
-            <a href="#"><h4>Explore</h4></a>
-            <a href="#"><h4>Blog</h4></a>
-          </div>
-          <img src="images/Dribbble-Logo.png" alt="" />
-          <div id="nav-part2">
-            <button>log in</button>
-            <button>Sign Up</button>
+    <header>
+      <a class="logo" href="#">Elevation<span>✳</span></a>
+      <nav>
+        <a href="#"><h4>Explore sessions</h4></a>
+        <a href="#"><h4>How it work</h4></a>
+        <a href="#"><h4>Membership</h4></a>
+      </nav>
+      <a class="button small" href="">Find your first room</a>
+    </header>
+
+    <main>
+      <section class="hero" id="hero_section">
+        <span class="pink pill">A little curiosity. A whole new circle.</span>
+        <h1>
+          Good conversations. <br />
+          <span> Great possibilities.</span>
+        </h1>
+        <p>
+          Learn from people doing the work. Ask your questions. <br />
+          Meet the people who could be part of your next chapter.
+        </p>
+        <div class="action">
+          <a class="button small" href="">Try your first session free</a>
+          <a class="textlink" href="">See how it works</a>
+        </div>
+
+        <div class="hero-note">
+          15 people per room <span>·</span> Every background welcome
+          <span>·</span> No card needed
+        </div>
+      </section>
+
+      <div id="owl-demo  slider1" class="owl-carousel owl-theme">
+        <div class="elem">
+          <img src="images/digital-creator.png" alt="" />
+          <div class="text-bottom">
+            <h5>
+              Emma Rivera <br />
+              UI/UX Designer
+            </h5>
           </div>
         </div>
 
-        <div id="hero_section">
-          <h3>Over 3 million ready-to-work creatives!</h3>
-          <h1>
-            Work with the world's top <br />
-            creative talent.
-          </h1>
-          <h4>
-            Connect with million of top-rated designer & agencies around the
-            world.
-          </h4>
-          <button>Start hiring today</button>
+        <div class="elem">
+          <img src="images/image2r.png" alt="" />
+          <div class="text-bottom">
+            <h5>
+              Sophia Bennett <br />
+              Visual Designer
+            </h5>
+          </div>
         </div>
 
-        <div id="owl-demo  slider1" class="owl-carousel owl-theme">
-          <div class="elem">
-            <img src="images/digital-creator.png" alt="" />
-            <div class="text-bottom">
-              <h5>
-                Emma Rivera <br />
-                UI/UX Designer
-              </h5>
-            </div>
+        <div class="elem">
+          <img src="images/imag3r.png" alt="" />
+          <div class="text-bottom">
+            <h5>Liam Parker <br />Graphic Designer</h5>
           </div>
+        </div>
 
-          <div class="elem">
-            <img src="images/image2r.png" alt="" />
-            <div class="text-bottom">
-              <h5>
-                Sophia Bennett <br />
-                Visual Designer
-              </h5>
-            </div>
+        <div class="elem">
+          <img src="images/image4.png" alt="" />
+          <div class="text-bottom">
+            <h5>
+              Ethan Collins <br />
+              Motion Designergt initgit
+            </h5>
           </div>
+        </div>
 
-          <div class="elem">
-            <img src="images/imag3r.png" alt="" />
-            <div class="text-bottom">
-              <h5>Liam Parker <br />Graphic Designer</h5>
-            </div>
-          </div>
-
-          <div class="elem">
-            <img src="images/image4.png" alt="" />
-            <div class="text-bottom">
-              <h5>
-                Ethan Collins <br />
-                Motion Designergt initgit
-              </h5>
-            </div>
-          </div>
-
-          <div class="elem">
-            <img src="images/image5.png" alt="" />
-            <div class="text-bottom">
-              <h5>
-                Noah Carter <br />
-                Identity Designer
-              </h5>
-            </div>
+        <div class="elem">
+          <img src="images/image5.png" alt="" />
+          <div class="text-bottom">
+            <h5>
+              Noah Carter <br />
+              Identity Designer
+            </h5>
           </div>
         </div>
       </div>
-    </div>
+
+      <section id="sessions" class="section">
+        <div class="section-top">
+          <div>
+            <span class="eyebrow">FIND YOUR NEXT CONVERSATION</span>
+            <h2>What are you curious about?</h2>
+          </div>
+          <p>
+            Fresh perspectives. Practical takeaways.<br />People worth getting
+            to know.
+          </p>
+        </div>
+        <div class="filters" role="group" aria-label="Filter sessions">
+          <button class="active" data-filter="All" aria-pressed="true">
+            All conversations</button
+          ><button data-filter="Career" aria-pressed="false">
+            Career &amp; hiring</button
+          ><button data-filter="Design" aria-pressed="false">
+            Design &amp; creativity</button
+          ><button data-filter="AI" aria-pressed="false">
+            AI &amp; technology
+          </button>
+        </div>
+        <div id="session-grid" class="session-grid">
+          <article>
+            <div class="session-art tone0">
+              <span class="label">CAREER &amp; HIRING</span>
+              <h3>What really makes a CV stand out?</h3>
+              <span class="caption">A CONVERSATION, NOT A LECTURE.</span>
+            </div>
+            <div class="session-info">
+              <div class="meta">
+                <span>60 min · Beginner friendly</span
+                ><span>15 people max</span>
+              </div>
+              <h3>Inside the hiring room: your CV, decoded</h3>
+              <p>Sophia Bennett · Hiring &amp; people</p>
+              <div class="session-bottom">
+                <span>First session free</span
+                ><button data-session="0">Explore session</button>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="session-art tone1">
+              <span class="label">DESIGN &amp; CREATIVITY</span>
+              <h3>Your work. Your story. Your next step.</h3>
+              <span class="caption">A CONVERSATION, NOT A LECTURE.</span>
+            </div>
+            <div class="session-info">
+              <div class="meta">
+                <span>60 min · All experience levels</span
+                ><span>15 people max</span>
+              </div>
+              <h3>A portfolio that starts a conversation</h3>
+              <p>Liam Parker · Brand &amp; visual design</p>
+              <div class="session-bottom">
+                <span>First session free</span
+                ><button data-session="1">Explore session</button>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="session-art tone2">
+              <span class="label">AI &amp; TECHNOLOGY</span>
+              <h3>Less jargon. More “oh, I get it.”</h3>
+              <span class="caption">A CONVERSATION, NOT A LECTURE.</span>
+            </div>
+            <div class="session-info">
+              <div class="meta">
+                <span>60 min · No tech skills needed</span
+                ><span>15 people max</span>
+              </div>
+              <h3>AI for the rest of us</h3>
+              <p>Noah Carter · Tools &amp; technology</p>
+              <div class="session-bottom">
+                <span>First session free</span
+                ><button data-session="2">Explore session</button>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="session-art tone3">
+              <span class="label">CAREER &amp; HIRING</span>
+              <h3>Let’s talk about your next interview.</h3>
+              <span class="caption">A CONVERSATION, NOT A LECTURE.</span>
+            </div>
+            <div class="session-info">
+              <div class="meta">
+                <span>75 min · Beginner friendly</span
+                ><span>15 people max</span>
+              </div>
+              <h3>Tell your story with more confidence</h3>
+              <p>Sophia Bennett · Hiring &amp; people</p>
+              <div class="session-bottom">
+                <span>First session free</span
+                ><button data-session="3">Explore session</button>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="session-art tone4">
+              <span class="label">UX &amp; PRODUCT</span>
+              <h3>Better questions. Better design.</h3>
+              <span class="caption">A CONVERSATION, NOT A LECTURE.</span>
+            </div>
+            <div class="session-info">
+              <div class="meta">
+                <span>60 min · Beginner friendly</span
+                ><span>15 people max</span>
+              </div>
+              <h3>What does a UX designer actually do?</h3>
+              <p>Emma Rivera · UX &amp; product design</p>
+              <div class="session-bottom">
+                <span>First session free</span
+                ><button data-session="4">Explore session</button>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="session-art tone5">
+              <span class="label">CREATIVE PRACTICE</span>
+              <h3>Big ideas start with small conversations.</h3>
+              <span class="caption">A CONVERSATION, NOT A LECTURE.</span>
+            </div>
+            <div class="session-info">
+              <div class="meta">
+                <span>60 min · Everyone welcome</span><span>15 people max</span>
+              </div>
+              <h3>Getting unstuck, together</h3>
+              <p>Ethan Collins · Creative practice</p>
+              <div class="session-bottom">
+                <span>First session free</span
+                ><button data-session="5">Explore session</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="how" class="how section">
+        <div class="section-top">
+          <div>
+            <span class="eyebrow">LESS SCROLLING. MORE CONNECTING.</span>
+            <h2>A small room.<br />A real exchange.</h2>
+          </div>
+          <p>
+            Listen, speak, and stick around.<br />The best part might be who you
+            meet.
+          </p>
+        </div>
+        <div class="steps">
+          <article>
+            <span class="number">01</span>
+            <h3>Find your people</h3>
+            <p>
+              Choose a topic that interests you. Start with one free session,
+              whatever your background or experience.
+            </p>
+          </article>
+          <article>
+            <span class="number">02</span>
+            <h3>Join the conversation</h3>
+            <p>
+              An expert shares what they know with up to 15 people. Ask the
+              questions a video can’t answer.
+            </p>
+          </article>
+          <article>
+            <span class="number">03</span>
+            <h3>Keep the connection</h3>
+            <p>
+              Talk with peers in the breakout room while the host takes short
+              individual turns. Book a longer one-to-one later.
+            </p>
+          </article>
+        </div>
+        <div class="room-note">
+          <strong>Everyone gets room to speak.</strong>
+          <p>
+            Each session lists its format and time for individual questions.
+            Longer private bookings are separate, so you know what’s included
+            before joining.
+          </p>
+        </div>
+      </section>
+
+      <section id="plans" class="section">
+        <div class="center">
+          <span class="eyebrow">START WITH CURIOSITY</span>
+          <h2>Your first conversation is on us.</h2>
+          <p>Get a feel for the room. Stay for the people.</p>
+        </div>
+        <div class="plans">
+          <article class="plan">
+            <span class="eyebrow">FIRST TASTE</span>
+            <h3>Come say hello</h3>
+            <div class="price">Free</div>
+            <p>One conversation. A new perspective.</p>
+            <ul>
+              <li>One expert-led group session</li>
+              <li>Live questions and peer discussion</li>
+              <li>A small room of up to 15 people</li>
+              <li>No payment details needed</li>
+            </ul>
+            <a class="button outline" href="#sessions"
+              >Explore your free session</a
+            >
+          </article>
+          <article class="plan featured">
+            <span class="pill pink">MAKE IT A HABIT</span>
+            <h3>Find your circle</h3>
+            <div class="price">£19<span> / month</span></div>
+            <p>Keep learning. Keep meeting people.</p>
+            <ul>
+              <li>Four group sessions each month</li>
+              <li>Career, design, AI and more</li>
+              <li>Peer networking in every session</li>
+              <li>Access to expert booking profiles</li>
+            </ul>
+            <button class="button" data-plan="">Explore membership</button>
+          </article>
+          <article class="plan">
+            <span class="eyebrow">GO A LITTLE DEEPER</span>
+            <h3>Just you and an expert</h3>
+            <div class="price">1:1<span> sessions</span></div>
+            <p>Dedicated time for your next step.</p>
+            <ul>
+              <li>CV and interview feedback</li>
+              <li>Portfolio and career conversations</li>
+              <li>Choose your expert and topic</li>
+              <li>Separately priced by each host</li>
+            </ul>
+            <button class="button outline" data-private="">
+              Explore one-to-ones
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <section class="faq section">
+        <h2>A few things you might wonder.</h2>
+        <details>
+          <summary>Do I need to work in tech or design?</summary>
+          <p>
+            Not at all. Sessions are open to curious people from any background.
+            Each session explains who it’s for and any experience that would be
+            helpful.
+          </p>
+        </details>
+        <details>
+          <summary>Why only 15 people?</summary>
+          <p>
+            Small groups make it easier to ask a question, share an experience,
+            and remember the people you meet. The limit applies to attendees,
+            with the host leading the session.
+          </p>
+        </details>
+        <details>
+          <summary>How do the breakout rooms work?</summary>
+          <p>
+            After the main conversation, peers continue discussing the topic
+            together while the host takes short individual question slots. The
+            agenda tells you how much time is available. Longer one-to-one
+            sessions are booked separately.
+          </p>
+        </details>
+        <details>
+          <summary>Can I share my own experience as a host?</summary>
+          <p>
+            Yes. Hosts should have relevant experience, be part of the
+            community, and enjoy helping people learn. Expertise matters, but so
+            does being willing to listen.
+          </p>
+        </details>
+      </section>
+
+      <section class="closing">
+        <span class="eyebrow">YOUR NEXT CHAPTER COULD START WITH HELLO</span>
+        <h2>You don’t have to<br />figure it out alone.</h2>
+        <a class="button" href="#sessions">Find your first conversation</a>
+        <p>Bring your curiosity. We’ll save you a seat.</p>
+      </section>
+      <footer>
+        <a class="logo" href="#">Elevation<span>✳</span></a>
+        <p>Learn something. Meet someone. Go further.</p>
+        <a href="#how">How it works</a><a href="#plans">Membership</a
+        ><span>© 2026 Elevation</span>
+      </footer>
+    </main>
+
+
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
