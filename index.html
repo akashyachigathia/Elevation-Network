@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dribble</title>
+    <title>Elevation Network | Learning &amp; networking concept</title>
     <link rel="icon" type="image/x-icon" href="images/Ele.png" />
 
     <!-- Owl CDN---- -->
@@ -35,8 +35,21 @@
       <a class="button small" href="">Find your first room</a>
     </header>
 
+    <aside class="dn-toolbar" aria-label="Portfolio design notes" hidden>
+      <span>Portfolio concept · Elevation Network</span>
+      <div>
+        <button type="button" id="dn-toggle" aria-pressed="false">
+          View design notes</button
+        ><button type="button" data-note="about">About this project</button>
+      </div>
+    </aside>
     <main>
       <section class="hero" id="hero_section">
+        <div class="dn-marker-row" hidden>
+          <button type="button" class="dn-marker" data-note="hero">
+            01 · Hero introduction
+          </button>
+        </div>
         <span class="pink pill">A little curiosity. A whole new circle.</span>
         <h1>
           Good conversations. <br />
@@ -46,6 +59,11 @@
           Learn from people doing the work. Ask your questions. <br />
           Meet the people who could be part of your next chapter.
         </p>
+        <div class="dn-marker-row" hidden>
+          <button type="button" class="dn-marker" data-note="actions">
+            02 · First steps
+          </button>
+        </div>
         <div class="action">
           <a class="button small" href="">Try your first session free</a>
           <a class="textlink" href="">See how it works</a>
@@ -107,6 +125,11 @@
       </div>
 
       <section id="sessions" class="section">
+        <div class="dn-marker-row" hidden>
+          <button type="button" class="dn-marker" data-note="sessions">
+            03 · Session discovery
+          </button>
+        </div>
         <div class="section-top">
           <div>
             <span class="eyebrow">FIND YOUR NEXT CONVERSATION</span>
@@ -246,6 +269,11 @@
       </section>
 
       <section id="how" class="how section">
+        <div class="dn-marker-row" hidden>
+          <button type="button" class="dn-marker" data-note="how">
+            04 · Participation
+          </button>
+        </div>
         <div class="section-top">
           <div>
             <span class="eyebrow">LESS SCROLLING. MORE CONNECTING.</span>
@@ -282,6 +310,11 @@
             </p>
           </article>
         </div>
+        <div class="dn-marker-row" hidden>
+          <button type="button" class="dn-marker" data-note="networking">
+            05 · Peer networking
+          </button>
+        </div>
         <div class="room-note">
           <strong>Everyone gets room to speak.</strong>
           <p>
@@ -293,6 +326,11 @@
       </section>
 
       <section id="plans" class="section">
+        <div class="dn-marker-row" hidden>
+          <button type="button" class="dn-marker" data-note="plans">
+            06 · Plans & pricing
+          </button>
+        </div>
         <div class="center">
           <span class="eyebrow">START WITH CURIOSITY</span>
           <h2>Your first conversation is on us.</h2>
@@ -346,6 +384,11 @@
       </section>
 
       <section class="faq section">
+        <div class="dn-marker-row" hidden>
+          <button type="button" class="dn-marker" data-note="faq">
+            07 · Reassurance
+          </button>
+        </div>
         <h2>A few things you might wonder.</h2>
         <details>
           <summary>Do I need to work in tech or design?</summary>
@@ -397,33 +440,26 @@
     </main>
 
 
-
+       <dialog class="dn-dialog" id="dn-dialog" aria-labelledby="dn-title">
+      <div class="dn-dialog-top">
+        <span>DESIGN THINKING · ELEVATION</span
+        ><button type="button" id="dn-close" aria-label="Close design note">
+          Close ×
+        </button>
+      </div>
+      <h2 id="dn-title"></h2>
+      <div id="dn-content"></div>
+      <p class="dn-footnote">
+        Portfolio concept · Design intentions, not measured outcomes.
+      </p>
+    </dialog>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- Owl Carousel JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-    <script>
-      $(".owl-carousel").owlCarousel({
-        loop: true,
-        margin: 24,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        // nav:true,
 
-        responsive: {
-          0: {
-            items: 3,
-          },
-          600: {
-            items: 3,
-          },
-          1000: {
-            items: 7,
-          },
-        },
-      });
-    </script>
+ <script src="script.js" ></script>
   </body>
 </html>

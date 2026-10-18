@@ -661,3 +661,27 @@ footer p {
 footer>span {
     color: #79707b;
 }
+
+/* Portfolio design notes — isolated from the landing-page styles. */
+.dn-toolbar[hidden], .dn-marker-row[hidden] { display: none !important; }
+.dn-toolbar { max-width: 1280px; margin: 12px auto 0; padding: 14px 20px; background: #f6f0fb; border: 1px solid #e5d8f2; border-radius: 14px; display: flex; justify-content: space-between; align-items: center; gap: 14px; color: #49315e; font-size: 13px; }
+.dn-toolbar div { display: flex; flex-wrap: wrap; gap: 8px; }
+.dn-toolbar button, .hero .dn-marker, .dn-marker, .dn-dialog button { font: 600 13px/1.4 "SuisseIntl", Arial, sans-serif; background: #fff; color: #563078; border: 1px solid #cfb6e4; border-radius: 24px; padding: 10px 16px; cursor: pointer; margin: 0; }
+.dn-toolbar button[aria-pressed="true"] { background: #563078; color: #fff; }
+.dn-marker-row { margin: 0 0 18px; }
+.dn-marker { box-shadow: 0 3px 12px #56307812; }
+.dn-marker:hover, .dn-toolbar button:hover { border-color: #563078; }
+.dn-dialog { width: min(660px, calc(100% - 32px)); max-height: 85dvh; margin: auto; padding: 28px; border: 1px solid #e5d8f2; border-radius: 20px; background: #fff; color: #29232e; overflow-y: auto; }
+.dn-dialog::backdrop { background: rgb(27 15 37 / 55%); }
+.dn-dialog-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.dn-dialog-top > span { font: 600 10px/1.4 Arial, sans-serif; letter-spacing: 1.2px; color: #68477e; }
+.dn-dialog h2 { font-size: 29px; line-height: 1.2; letter-spacing: -.7px; margin: 24px 0; }
+.dn-dialog h3 { font-size: 16px; margin: 22px 0 8px; }
+.dn-dialog p { font: 400 15px/1.7 "SuisseIntl", Arial, sans-serif; color: #5d5463; }
+.dn-dialog .dn-footnote { font-size: 12px; border-top: 1px solid #e9e2ee; padding-top: 16px; margin-top: 24px; }
+.dn-toolbar button:focus-visible, .dn-marker:focus-visible, .dn-dialog button:focus-visible { outline: 3px solid #563078; outline-offset: 4px; }
+@media (max-width: 600px) {
+ .dn-toolbar { margin: 12px 16px 0; flex-direction: column; align-items: flex-start; }
+ .dn-dialog { padding: 20px; }
+ .dn-dialog h2 { font-size: 25px; }
+}
