@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dribble</title>
+    <link rel="icon" type="image/x-icon" href="images/50x50.png" />
+
+    <!-- Owl CDN---- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <!-- Owl CDN---- -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      <div id="page1">
+        <div id="nav">
+          <div id="nav-part1">
+            <a href="#"><h4>Explore</h4></a>
+            <a href="#"><h4>Inspiration</h4></a>
+            <a href="#"><h4>Hire a Designer</h4></a>
+            <a href="#"><h4>Find Jobs</h4></a>
+            <a href="#"><h4>Explore</h4></a>
+            <a href="#"><h4>Blog</h4></a>
+          </div>
+          <img src="images/Dribbble-Logo.png" alt="" />
+          <div id="nav-part2">
+            <button>log in</button>
+            <button>Sign Up</button>
+          </div>
+        </div>
+
+        <div id="hero_section">
+          <h3>Over 3 million ready-to-work creatives!</h3>
+          <h1>
+            Work with the world's top <br />
+            creative talent.
+          </h1>
+          <h4>
+            Connect with million of top-rated designer & agencies around the
+            world.
+          </h4>
+          <button>Start hiring today</button>
+        </div>
+
+        <div id="owl-demo  slider1" class="owl-carousel owl-theme">
+          <div class="elem">
+            <img src="images/digital-creator.png" alt="" />
+            <div class="text-bottom">
+              <h5>
+                Emma Rivera <br />
+                UI/UX Designer
+              </h5>
+            </div>
+          </div>
+
+          <div class="elem">
+            <img src="images/image2r.png" alt="" />
+            <div class="text-bottom">
+              <h5>
+                Sophia Bennett <br />
+                Visual Designer
+              </h5>
+            </div>
+          </div>
+
+          <div class="elem">
+            <img src="images/imag3r.png" alt="" />
+            <div class="text-bottom">
+              <h5>Liam Parker <br />Graphic Designer</h5>
+            </div>
+          </div>
+
+          <div class="elem">
+            <img src="images/image4.png" alt="" />
+            <div class="text-bottom">
+              <h5>
+                Ethan Collins <br />
+                Motion Designergt initgit
+              </h5>
+            </div>
+          </div>
+
+          <div class="elem">
+            <img src="images/image5.png" alt="" />
+            <div class="text-bottom">
+              <h5>
+                Noah Carter <br />
+                Identity Designer
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 24,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        // nav:true,
+
+        responsive: {
+          0: {
+            items: 3,
+          },
+          600: {
+            items: 3,
+          },
+          1000: {
+            items: 7,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
